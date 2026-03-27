@@ -1,0 +1,130 @@
+# ── Auracelle Charlie — Actor definitions ────────────────────────────────────
+# Each actor carries:
+#   gdp          : GDP in USD trillions (baseline; overwritten by World Bank API)
+#   influence    : normalised influence score 0–1
+#   position     : short-form policy stance description
+#   mil_exp      : military expenditure as % of GDP (baseline)
+#   internet     : internet penetration % (baseline)
+#   cultural_alignment : broad cultural bloc label
+#   iso3         : ISO 3166-1 alpha-3 code (used for World Bank / Comtrade calls)
+#
+# Baseline values are defaults only; the simulation loads live World Bank data
+# at session start and overwrites gdp / mil_exp / internet where available.
+
+actors:
+  Dubai:
+    gdp: 0.5
+    influence: 0.70
+    position: "Moderate regulatory stance"
+    mil_exp: 5.6
+    internet: 99.0
+    cultural_alignment: "Western-Middle East hybrid"
+    iso3: ARE
+
+  United Kingdom:
+    gdp: 3.2
+    influence: 0.85
+    position: "Supports EU-style data protection"
+    mil_exp: 2.2
+    internet: 96.0
+    cultural_alignment: "Western"
+    iso3: GBR
+
+  United States:
+    gdp: 21.0
+    influence: 0.95
+    position: "Favors innovation over regulation"
+    mil_exp: 3.4
+    internet: 92.0
+    cultural_alignment: "Western"
+    iso3: USA
+
+  Japan:
+    gdp: 5.1
+    influence: 0.88
+    position: "Pro-regulation for trust"
+    mil_exp: 1.0
+    internet: 95.0
+    cultural_alignment: "Eastern-Western hybrid"
+    iso3: JPN
+
+  China:
+    gdp: 17.7
+    influence: 0.93
+    position: "Strict state-driven AI governance"
+    mil_exp: 1.7
+    internet: 73.0
+    cultural_alignment: "Eastern"
+    iso3: CHN
+
+  Brazil:
+    gdp: 2.0
+    influence: 0.75
+    position: "Leaning toward EU-style regulation"
+    mil_exp: 1.4
+    internet: 81.0
+    cultural_alignment: "Latin American"
+    iso3: BRA
+
+  India:
+    gdp: 3.7
+    influence: 0.82
+    position: "Strategic tech balancing"
+    mil_exp: 2.4
+    internet: 43.0
+    cultural_alignment: "South Asian"
+    iso3: IND
+
+  Russia:
+    gdp: 1.8
+    influence: 0.78
+    position: "Sovereign tech control"
+    mil_exp: 4.3
+    internet: 85.0
+    cultural_alignment: "Eastern"
+    iso3: RUS
+
+  Iraq:
+    gdp: 0.2
+    influence: 0.42
+    position: "Developing governance framework"
+    mil_exp: 3.5
+    internet: 49.0
+    cultural_alignment: "Middle East"
+    iso3: IRQ
+
+  Qatar:
+    gdp: 0.18
+    influence: 0.68
+    position: "Tech-forward with state oversight"
+    mil_exp: 3.7
+    internet: 99.0
+    cultural_alignment: "Middle East"
+    iso3: QAT
+
+  NATO:
+    gdp: 25.0
+    influence: 0.97
+    position: "Collective security & data interoperability"
+    mil_exp: 2.5
+    internet: 90.0
+    cultural_alignment: "Western Alliance"
+    iso3: null   # supranational — no single ISO3
+
+  Greenland:
+    gdp: 0.003
+    influence: 0.45
+    position: "Emerging Arctic tech governance"
+    mil_exp: 0.0
+    internet: 68.0
+    cultural_alignment: "Nordic"
+    iso3: GRL
+
+  Venezuela:
+    gdp: 0.048
+    influence: 0.58
+    position: "State-controlled digital infrastructure"
+    mil_exp: 0.9
+    internet: 72.0
+    cultural_alignment: "Latin American"
+    iso3: VEN
