@@ -1,0 +1,45 @@
+# ── Auracelle Charlie — Scenario definitions ─────────────────────────────────
+# Scenarios set the opening conditions for a simulation session.
+
+scenarios:
+  - id: baseline
+    label: "Baseline — Open Governance"
+    description: >
+      Standard multi-stakeholder governance environment.
+      Tension: moderate. Stability: moderate. Shock probability: low.
+    initial_tension: 0.40
+    initial_stability: 0.60
+    initial_sanction_pressure: 0.20
+    shock_sigma: 0.02
+
+  - id: cyber_crisis
+    label: "Crisis — Cascading Cyber Incident"
+    description: >
+      A coordinated APT campaign has triggered NIS2 obligations across
+      multiple EU member states simultaneously. Alliance cohesion is under
+      pressure. Tension elevated.
+    initial_tension: 0.65
+    initial_stability: 0.40
+    initial_sanction_pressure: 0.30
+    shock_sigma: 0.05
+
+  - id: sanctions_cascade
+    label: "Escalation — Sanctions Cascade"
+    description: >
+      Export-control measures have triggered retaliatory trade restrictions.
+      Emerging economies are choosing sides. Tech supply chains disrupted.
+    initial_tension: 0.55
+    initial_stability: 0.45
+    initial_sanction_pressure: 0.55
+    shock_sigma: 0.04
+
+  - id: treaty_negotiation
+    label: "Diplomacy — Treaty Negotiation Window"
+    description: >
+      A multilateral AI governance treaty is on the table. Actors must
+      decide whether to cooperate, defect, or tighten controls to maximise
+      their negotiating position. Stability high, tension low.
+    initial_tension: 0.25
+    initial_stability: 0.75
+    initial_sanction_pressure: 0.10
+    shock_sigma: 0.01
